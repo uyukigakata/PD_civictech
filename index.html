@@ -1,0 +1,156 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html lang= "ja">
+
+<head>
+    <meta  http-equiv="Content-Type" content="text/html; charset=UTF8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>シビックテック関連サイト</title>
+    
+    <link rel ="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">   
+   
+</head>
+<style>
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2? family= Roboto+Condensed:ital,wght@1,200 & display=swap');
+.head {
+  text-align: center;
+  width: 100%;
+  font-size: 40px;
+  color: rgb(23, 25, 23);-webkit-text-stroke: 1px white;
+  text-shadow: 0px 1px 4px rgb(7, 7, 7);
+}
+
+body {
+    background-color: rgb(240, 234, 234);
+}
+
+ul {
+  text-align: center;
+  list-style: none;
+  padding: 0;
+  display: flex;
+}
+
+li {
+  width: 100%;
+  height: 50px;
+  background-color:	gray;
+  margin-right: 10px;
+  line-height: 50px;
+}
+
+li a {
+    font-size: 20px;
+    color: white;-webkit-text-stroke: 1px white;
+    text-shadow: 0px 1px 3px black;
+    text-decoration: none;
+}
+
+.container {
+    position: relative;
+    display: flex;
+}
+
+.image {
+    display: flex;
+    position: absolute;
+    margin: 30px auto;
+	opacity: 0;
+	animation: change-img-anim 30s infinite;
+    width: 100%;
+    height: 600px;
+}
+
+.image:nth-of-type(1) {
+	animation-delay: 0s;
+}
+.image:nth-of-type(2) {
+	animation-delay: 10s;
+}
+.image:nth-of-type(3) {
+	animation-delay: 20s;
+}
+
+@keyframes change-img-anim {
+	0%{ opacity: 0;}
+	10%{ opacity: 1;}
+	90%{ opacity: 1;}
+	100%{ opacity: 0;}
+}
+ 
+.fade {
+    padding: 100px 10%; 
+    font-size: 20px;
+    color: black;
+    margin-top: 560px;
+    opacity: 0;
+    transition: opacity 3s;   
+}
+.fade.view {
+    opacity: 1;
+}
+
+.mail {
+    font-size: 15px;
+    font-weight: bold;
+}
+.info {
+    font-size: 15px;
+    font-weight: bold;
+}
+
+</style>
+<body>
+    <h1 class="head">Welcome to <br>Kanazawa Civic Tech Business</h1>
+<header>
+    <ul>
+        <li><a href = "index.html" >ホーム</a></li>
+        <li><a href = "HTML/opinion.html" >意見箱BOX</a></li>
+        <li><a href = "HTML/info.html" >最新情報</a></li>
+        <li><a href = "HTML/tech_kigyou.html" >企業の方へ</a></li>
+        <li><a href = "HTML/inquiry.html" >問い合わせ</a></li>
+        <li><a href = "HTML/quiz.html">クイズ</a></li>
+    </ul>
+</header>
+<div class="container">
+    <img class="image" src="img/kenroku2.jpg" width="100%" height="600px">
+    <img class="image" src="img/tudumi.jpg"  width="100%" height="600px">
+    <img class="image" src="img/siro.jpg" width="100%" height="600px">
+</div>
+<section>
+    <div>
+        <p class="fade">このサイトを見ていただきありがとうございます。<br>
+            まず初めに皆さんはシビックテックをご存じでしょうか？
+            シビックテックとは、市民(シチズン)と技術(テクノロジー)を組み合わせた言葉で、技術を活用して市民参加や地方自治体の透明化、効率性の向上を図り、社会課題に取り組む取り組みのことを言います。
+            <br>現状では金沢市の住民が不満を持っていても、それを気軽に投稿したり、発信ができる場所が少ないという問題があります。その問題を解決するため、地域住民の不満を集めるための掲示板サイトや問題を解決するための人材の募集、シビックテックのイベント情報を掲載し、不満の可視化をしていくのがこのサイトの目的です。</p>
+    </div>
+</section>
+<section>
+    <div style="text-align: center;">
+        <p>
+            <address class="mail"><br><br>
+                お問い合わせは下記まで<br>
+                担当：五味川、高垣、大石、進藤、中野、北村<br>
+                電話番号:0120-838-838
+            </address>
+            <small class="info"><br>Copyright © 2024 1月31日. All rights resetved.</small>
+        </p>
+    </div>
+</section>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+    $(function () {
+        $(window).scroll(function () {
+          $('.fade').each(function () {
+            const targetElement = $(this).offset().top;
+            const scroll = $(window).scrollTop();
+            const windowHeight = $(window).height();
+            if (scroll > targetElement - windowHeight) {
+              $(this).addClass('view');
+            }
+          });
+        });
+      });
+</script>
+</html>
