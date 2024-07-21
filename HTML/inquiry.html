@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>お問い合わせ</title>
+        <link rel="stylesheet" href="../CSS/inquiry.css" media="all" />
+        <link rel="stylesheet" href="../CSS/toggle.css" media="all">
+    <script src="../Java/toggle.js"></script>
+    </head>
+    <body>
+        <div class="contact">
+            <h1 class="contact-ttl">お問い合わせ</h1>
+
+            <form action="../PHP/inquiry.php" method ="post">
+                <table class="contact-table">
+                    <tr>
+                        <th class="contact-item">名前</th>
+                        <td class="contact-body">
+                            <input type="text" name= nameless class="form-text" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <th class="contact-item">メール</th>
+                        <td class="contact-body">
+                            <input type="text" name= mail class="form-text" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <th class="contact-item">お問い合わせ内容</th>
+                        <td class="contact-body">
+                            <input type="text" name= inquiry class="form-text" />
+                        </td>
+                    </tr>
+                </table>
+                <input type="hidden" id="toggleState" name="toggleState" value="off">
+                <div class="switch_outer">
+                    <div class="toggle_switch"></div>
+                </div>
+                <span class="anonymous-text">匿名希望の方はオン</span>
+                <input class="contact-submit" type="submit" value="送信" />
+            </form>
+            <nav>
+                <li><a href = "../index.html" ><index class="html"></index>Home</a></li>        
+            </nav>
+        </div>
+    </body>
+</html>

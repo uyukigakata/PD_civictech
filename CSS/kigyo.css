@@ -1,0 +1,84 @@
+/* style.css */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgb(240, 234, 234); /* Dark grey background color */
+    color: #5f5d5d; /* White text color */
+    margin: 0;
+    padding: 0;
+    text-align: center; /* Center align the content */
+}
+p {
+    font-weight: bold;
+}
+.container {
+max-width: 800px;
+margin: 0 auto;
+padding: 20px;
+}
+
+h1 {
+color: #0d0e0e;
+}
+
+a {
+text-decoration: none;
+}
+
+a:hover {
+text-decoration: underline;
+}
+
+.url-box {
+display: inline-block;
+padding: 15px;
+margin-bottom: 15px;
+border-radius: 5px;
+overflow: hidden;
+background-color: #808080; /* Grey background color */
+}
+
+.url-box a {
+color: #fff; /* White text color */
+}
+
+.kanazawa {
+background-color: #808080; /* Grey background color */
+}
+.box1 {
+    display: flex;
+    display: inline-block;
+}
+.box2 {
+    display: flex;
+    display: inline-block;
+}
+.box3 {
+    display: flex;
+    display: inline-block;
+}
+
+.nonoichi {
+background-color: #000; /* Black background color */
+}
+
+/* Add more classes and colors for other cities if needed */
+
+nav {
+background-color: #333;
+padding: 10px;
+}
+
+nav li {
+display: inline;
+margin-right: 15px;
+}
+
+nav a {
+color: #838383;
+text-decoration: none;
+}
+
+nav a:hover {
+text-decoration: underline;
+}

@@ -1,0 +1,90 @@
+/* styles.css */
+
+/* Resetting default margins and paddings */
+body, h1, p {
+  margin: 0;
+  padding: 0;
+}
+
+/* Body styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.quiz {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  max-width: 400px;
+  width: 90%;
+  margin-top: 50px;
+}
+
+.quiz_title {
+  font-size: 40px;
+  font-weight: bold;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.quiz_style {
+  width: 960px;
+  margin: 0 auto;
+  padding: 60px 0;
+}
+
+h1 {
+  color: #333;
+  margin-bottom: 20px;
+}
+
+button {
+  margin: 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #eee;
+}
+
+/* Result and explanation styles */
+.result {
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+#explanation {
+  color: #666;
+  margin-top: 10px;
+}
+
+#nextQuestionLink {
+  display: block;
+  margin-top: 20px;
+  text-decoration: none;
+  color: #007bff;
+  font-weight: bold;
+}
+
+#nextQuestionLink:hover {
+  text-decoration: underline;
+}
+
+/* Score styles */
+#score {
+  margin-top: 20px;
+  font-weight: bold;
+  color: #333;
+}

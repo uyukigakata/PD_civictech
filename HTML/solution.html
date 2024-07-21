@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>お問い合わせ</title>
+    <link rel="stylesheet" href="../CSS/style.css" media="all" />
+</head>
+<body>
+    <div class="contact">
+        <h1 class="contact-ttl">意見BOX</h1>
+
+        <form  id="myForm"action="../solution.php" method ="post">
+            <table class="contact-table">
+                <tr>
+                    <th class="contact-item">市</th>
+                    <td class="contact-body">
+                        <select name="choice" class="form-select">
+                                <option value="---">選択してください</option>
+                                <option value="金沢市">金沢市</option>
+                                <option value="野々市市">野々市市</option>
+                                <option value="野々市市">七尾市</option>
+                                <option value="野々市市">小松市</option>
+                                <option value="野々市市">輪島市</option>
+                                <option value="野々市市">珠洲市</option>
+                                <option value="野々市市">加賀市</option>
+                                <option value="野々市市">羽咋市</option>
+                                <option value="野々市市">かほく市</option>
+                                <option value="野々市市">白山市</option>
+                                <option value="野々市市">能美市</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <th class="contact-item">解決してみたいジャンル</th>
+                    <td class="contact-body">
+                        <select name="choice2" class="form-select">
+                            <option value="---">選択してください</option>
+                            <option value="ゴミ">ゴミ</option>
+                            <option value="人">人</option>
+                            <option value="環境">環境</option>
+                            <option value="その他">その他</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <th class="contact-item">特にどのようなものですか？</th>
+                    <td class="contact-body">
+                        <input type="text" name="choice3" class="form-text" value="特になし" />
+                    </td>
+                </tr>
+            </table>
+            <input class="contact-submit" type="submit" name="click" required/>
+            <nav>
+                <li><a href = "../png/kanazawa_graph.png" ><index class="html"></index>Home</a></li>        
+            </nav>
+        </form>
+    </div>
+</body>
+</html>
